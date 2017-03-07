@@ -1,0 +1,129 @@
+@font-face {
+	font-family: "fontcustom";
+	src: url("../fonts/iconfont.eot");
+	src: url("../fonts/iconfont.eot?#iefix") format("embedded-opentype"),
+		 url("../fonts/iconfont.woff") format("woff"),
+		 url("../fonts/iconfont.ttf") format("truetype"),
+		 url("../fonts/iconfont.svg#fontcustom") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	@font-face {
+		font-family: "fontcustom";
+		src: url("../fonts/iconfont.svg#fontcustom") format("svg");
+	}
+}
+
+[data-icon]:before { content: attr(data-icon); }
+
+[data-icon]:before,
+.icon-adobe:before,
+.icon-arrow:before,
+.icon-article:before,
+.icon-bell:before,
+.icon-check:before,
+.icon-close:before,
+.icon-comment:before,
+.icon-compare:before,
+.icon-dashboard:before,
+.icon-date:before,
+.icon-doublearrow:before,
+.icon-down:before,
+.icon-edit:before,
+.icon-expand:before,
+.icon-facebook:before,
+.icon-gear:before,
+.icon-google-plus:before,
+.icon-invitation:before,
+.icon-link:before,
+.icon-linkedin:before,
+.icon-list:before,
+.icon-lock:before,
+.icon-look:before,
+.icon-mail:before,
+.icon-mic:before,
+.icon-minimize:before,
+.icon-more:before,
+.icon-news:before,
+.icon-off:before,
+.icon-pages:before,
+.icon-pin:before,
+.icon-pin-filled:before,
+.icon-play:before,
+.icon-plus:before,
+.icon-preferences:before,
+.icon-print:before,
+.icon-resend:before,
+.icon-rightarrow:before,
+.icon-role:before,
+.icon-search:before,
+.icon-share:before,
+.icon-trash:before,
+.icon-twitter:before,
+.icon-typewriter:before,
+.icon-undo:before,
+.icon-up:before,
+.icon-user:before {
+	display: inline-block;
+	font-family: "fontcustom";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	line-height: 1;
+	text-decoration: inherit;
+	text-rendering: optimizeLegibility;
+	text-transform: none;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+
+.icon-adobe:before { content: "\f100"; }
+.icon-arrow:before { content: "\f101"; }
+.icon-article:before { content: "\f134"; }
+.icon-bell:before { content: "\f102"; }
+.icon-check:before { content: "\f123"; }
+.icon-close:before { content: "\f124"; }
+.icon-comment:before { content: "\f103"; }
+.icon-compare:before { content: "\f104"; }
+.icon-dashboard:before { content: "\f135"; }
+.icon-date:before { content: "\f105"; }
+.icon-doublearrow:before { content: "\f13a"; }
+.icon-down:before { content: "\f106"; }
+.icon-edit:before { content: "\f107"; }
+.icon-expand:before { content: "\f108"; }
+.icon-facebook:before { content: "\f125"; }
+.icon-gear:before { content: "\f126"; }
+.icon-google-plus:before { content: "\f127"; }
+.icon-invitation:before { content: "\f136"; }
+.icon-link:before { content: "\f109"; }
+.icon-linkedin:before { content: "\f128"; }
+.icon-list:before { content: "\f13d"; }
+.icon-lock:before { content: "\f129"; }
+.icon-look:before { content: "\f10a"; }
+.icon-mail:before { content: "\f10b"; }
+.icon-mic:before { content: "\f10c"; }
+.icon-minimize:before { content: "\f12a"; }
+.icon-more:before { content: "\f10d"; }
+.icon-news:before { content: "\f10e"; }
+.icon-off:before { content: "\f12b"; }
+.icon-pages:before { content: "\f137"; }
+.icon-pin:before { content: "\f10f"; }
+.icon-pin-filled:before { content: "\f110"; }
+.icon-play:before { content: "\f111"; }
+.icon-plus:before { content: "\f112"; }
+.icon-preferences:before { content: "\f12c"; }
+.icon-print:before { content: "\f12d"; }
+.icon-resend:before { content: "\f138"; }
+.icon-rightarrow:before { content: "\f13c"; }
+.icon-role:before { content: "\f139"; }
+.icon-search:before { content: "\f12e"; }
+.icon-share:before { content: "\f13f"; }
+.icon-trash:before { content: "\f12f"; }
+.icon-twitter:before { content: "\f130"; }
+.icon-typewriter:before { content: "\f133"; }
+.icon-undo:before { content: "\f13e"; }
+.icon-up:before { content: "\f131"; }
+.icon-user:before { content: "\f132"; }

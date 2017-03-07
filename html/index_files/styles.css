@@ -1,0 +1,129 @@
+@import "reset.css";
+
+html {
+    /*show alway scrollbar*/
+    overflow-y: -moz-scrollbars-vertical;
+    overflow-y: scroll;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    color: #808080;
+
+}
+
+.top_nav_outer {
+    position: relative;
+    margin-right: 10px;
+    float: right;
+}
+
+.top_nav_inner {
+    margin-top: 10px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.top_nav_inner li {
+    display: inline-block;
+}
+
+.top_nav_inner li:after {
+    content: " |";
+    font-weight: bold;
+}
+
+.top_nav_inner li:last-child:after {
+    content: "";
+
+}
+
+.top_nav_inner a {
+    color: #808080;
+    font-weight: 600;
+}
+
+.main_outer {
+    position: relative;
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 80px;
+    float: none;
+    /*background-color: #caf8f7;*/
+}
+
+.search_field {
+    align-content: center;
+    margin-bottom: 10px;
+}
+
+body > div.main_outer > div > div > form > input {
+    width: 400px;
+}
+
+.search_field_heading {
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+}
+
+.search_input_field {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.search_btn {
+    margin: 0 auto;
+    display: block;
+}
+
+.resultTable {
+    /*table-layout: fixed;*/
+    margin-top: 50px;
+}
+
+.resultTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.resultTable td {
+    padding: 10px 0;     /* 10px top & bottom padding, 0px left & right */
+    border-width: 1px 0; /*  1px top & bottom border,  0px left & right */
+    border-color: #808080;
+    border-style: solid;
+}
+
+.resultTable tr:hover {
+    background-color: lightyellow;
+}
+
+.resultTable .linkedCol {
+    cursor: pointer;
+}
+
+.centerContent {
+    width: 100%;
+
+    /* Internet Explorer 10 */
+    display: -ms-flexbox;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+
+    /* Firefox */
+    display: -moz-box;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+
+    /* Safari, Chrome, and Opera */
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+
+    /* W3C */
+    display: box;
+    box-pack: center;
+    box-align: center;
+}
