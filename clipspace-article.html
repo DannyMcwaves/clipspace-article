@@ -1,0 +1,35 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+`clipspace-article`
+Toplevel Element for an article
+
+@demo demo/index.html
+-->
+
+<dom-module id="clipspace-article">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]</h2>
+  </template>
+
+  <script>
+    class MyElement extends Polymer.Element {
+      static get is() { return 'clipspace-article'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'clipspace-article'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(MyElement.is, MyElement);
+  </script>
+</dom-module>
