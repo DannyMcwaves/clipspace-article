@@ -82,7 +82,7 @@ Toplevel Element for an article
                       </div>
                       <div class="post-brief">
                         <p>
-                          <slot></slot>
+                          [[abstract]]
                         </p>
                       </div>
                     </div>
@@ -133,6 +133,7 @@ Toplevel Element for an article
             static get properties() {
                 return {
                     title: String,
+                    abstract: String,
                     prevImg: String
                 };
             }
