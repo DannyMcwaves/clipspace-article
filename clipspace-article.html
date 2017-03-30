@@ -78,13 +78,11 @@ Toplevel Element for an article
                   <div class="col-md-5">
                     <div class="post-content">
                       <div class="post-title">
-                        <h1>Instagram: 1,5 Milliarden Dollar Umsatz 2016, 600 Millionen Nutzer + 137 weitere Zahlen &amp; Fakten</h1>
+                        <h1>[[title]]</h1>
                       </div>
                       <div class="post-brief">
                         <p>
-                          Der Umsatzanteil der Foto-Tochter bei Facebook liegt bei geschätzt gut 8 Prozent – und könnte bis Ende 2018 auf knapp ein Fünftel anschwellen.
-
-                          <!-- Hide read-more Button when no paragraphs are attached. -->
+                          <slot></slot>
                         </p>
                       </div>
                     </div>
@@ -134,9 +132,8 @@ Toplevel Element for an article
             }
             static get properties() {
                 return {
-                    prop1: {
-                        type: String,
-                        value: 'clipspace-article'
+                    title: {
+                        type: String
                     }
                 };
             }
