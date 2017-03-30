@@ -70,7 +70,7 @@ Toplevel Element for an article
                     <!-- Preview image -->
                     <div class="post-preview">
                       <a href="http://blog.wiwo.de/look-at-it/2017/03/06/instagram-15-milliarden-dollar-umsatz-2016-600-millionen-nutzer-137-weitere-zahlen-fakten/" target="_blank">
-                        <img class="img-responsive" src="./index_files/6d6c2e4dad720b09c26bc2a8a8915351.png" alt="">
+                        <img class="img-responsive" src="[[prevImg]]" alt="">
                       </a>
                     </div>
                     <!-- End Preview image -->
@@ -132,9 +132,8 @@ Toplevel Element for an article
             }
             static get properties() {
                 return {
-                    title: {
-                        type: String
-                    }
+                    title: String,
+                    prevImg: String
                 };
             }
         }
