@@ -8,28 +8,128 @@ Toplevel Element for an article
 -->
 
 <dom-module id="clipspace-article">
-  <template>
+    <template>
     <style>
-      :host {
-        display: block;
-      }
+      :host {}
     </style>
-    <h2>Hello [[prop1]]</h2>
+    <div class="collapsed-post">
+	            <div class="row">
+	            	 <div class="col-md-12">
+	                    <div class="post-header">
+	                        <div class="row">
+	                            <div class="col-sm-6 selectoin_menu">
+	                            </div>
+	                            <div class="col-md-6">
+	                                <div class="post-actions"></div>
+	                            <div class="col-md-6">
+	                                <div class="post-header-buttons">
+	                                    <button data-toggle="tooltip" data-placement="top" title="" class="btn btn-icon clipping-check-btn action-margin " data-original-title="Artikel markieren">
+		                                    <span class="icon icon-check"></span>
+		                                    <input type="checkbox" class="hide clipping-checkbox" name="clipping[]" value="58bd09df99f95f0914c04a31">
+	                                    </button>
+
+	                                    <!--<button class="btn btn-icon action-margin" data-toggle="tooltip" data-placement="top" title="Artikel pinnen"><span class="icon icon-pin"></span></button> -->
+
+	                                    <div class="btn-group btn-group-tonality action-margin">
+	                                        <button class="btn btn-icon positiveTonality " data-toggle="tooltip" data-placement="top" data-container="body" title="" data-original-title="Positive Tonalität">
+	                                            <span class="icon icon-up"></span>
+	                                        </button>
+	                                        <button class="btn btn-icon negativeTonality " data-toggle="tooltip" data-placement="top" data-container="body" title="" data-original-title="Negative Tonalität">
+	                                            <span class="icon icon-down"></span>
+	                                        </button>
+	                                    </div>
+	                                    <button class="btn-expand post-expand-btn" data-toggle="tooltip" data-placement="top" title="" data-original-title="Vollständiger Artikel">
+	                                        <span class="icon icon-expand"></span>
+	                                    </button>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="post-container">
+	                    	<div class="row">
+	                            <div class="col-md-8 post-info">
+		                                <span class="post-date pull-left">
+
+		                                	6. März 2017
+		                                </span>
+	                            </div>
+	                        </div>
+	                        <div class="row">
+		                        	<div class="col-md-3">
+		                        		<!-- Preview image -->
+		                                <div class="post-preview">
+	                                    			<a href="http://blog.wiwo.de/look-at-it/2017/03/06/instagram-15-milliarden-dollar-umsatz-2016-600-millionen-nutzer-137-weitere-zahlen-fakten/" target="_blank">
+		                                		<img class="img-responsive" src="./index_files/6d6c2e4dad720b09c26bc2a8a8915351.png" alt="">
+		                                	</a>
+		                                </div>
+		                                <!-- End Preview image -->
+		                            </div>
+	                            <div class="col-md-5">
+	                                <div class="post-content">
+	                                    <div class="post-title">
+	                                        <h1>Instagram: 1,5 Milliarden Dollar Umsatz 2016, 600 Millionen Nutzer + 137 weitere Zahlen &amp; Fakten</h1>
+	                                    </div>
+	                                    <div class="post-brief">
+	                                        	<p>
+	                                                Der Umsatzanteil der Foto-Tochter bei Facebook liegt bei geschätzt gut 8 Prozent – und könnte bis Ende 2018 auf knapp ein Fünftel anschwellen.
+
+	                                                <!-- Hide read-more Button when no paragraphs are attached. -->
+	                                            </p>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                            <div class="col-md-4 hidden-xs hidden-sm">
+	                                <div class="post-source">
+	                                    <div class="source-provider clearfix">
+	                                        <div class="provider-logo col-sm-5">
+			                                            <img src="./index_files/5ae6ce9.png" class="img-responsive">
+	                                        </div>
+	                                        <div class="provider col-sm-7">
+	                                        			<div class="provider-name">
+	                                        				<a href="http://www.wiwo.de/" target="_blank">
+	                                        					WirtschaftsWoche Online
+	                                        				</a>
+		                                                </div>
+	                                        </div>
+	                                    </div>
+	                                    <div class="source-media">
+	                                    			<a href="http://blog.wiwo.de/look-at-it/2017/03/06/instagram-15-milliarden-dollar-umsatz-2016-600-millionen-nutzer-137-weitere-zahlen-fakten/" target="_blank">
+	                                    				<span class="icon icon-link"></span> Originalartikel
+	                                    			</a>
+	                                    </div>
+	                                    <div class="post-meta-short">
+	                                        <dl class="dl-horizontal">
+	                                                <dt>Reichweite </dt>
+	                                                <dd>: 172.562</dd>
+		                                            <dt>Rubrik </dt>
+		                                            <dd>: Internet</dd>
+	                                        </dl>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+          </div>
+  	 </div>
+	            </div>
+
+			</div>
   </template>
 
-  <script>
-    class MyElement extends Polymer.Element {
-      static get is() { return 'clipspace-article'; }
-      static get properties() {
-        return {
-          prop1: {
-            type: String,
-            value: 'clipspace-article'
-          }
-        };
-      }
-    }
+    <script>
+        class MyElement extends Polymer.Element {
+            static get is() {
+                return 'clipspace-article';
+            }
+            static get properties() {
+                return {
+                    prop1: {
+                        type: String,
+                        value: 'clipspace-article'
+                    }
+                };
+            }
+        }
 
-    window.customElements.define(MyElement.is, MyElement);
-  </script>
+        window.customElements.define(MyElement.is, MyElement);
+    </script>
 </dom-module>
