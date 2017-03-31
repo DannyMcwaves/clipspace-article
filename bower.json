@@ -3,7 +3,9 @@
   "description": "Toplevel Element for an article",
   "main": "clipspace-article.html",
   "dependencies": {
-    "polymer": "Polymer/polymer#^2.0.0-rc.3"
+    "polymer": "Polymer/polymer#^2.0.0-rc.3",
+    "i18next" : "i18next/i18next#^7.1.3",
+    "i18next-xhr-backend" : "i18next/i18next-xhr-backend#^1.4.1"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#2.0-preview",
@@ -12,6 +14,6 @@
     "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0-rc.5"
   },
   "resolutions": {
-    "polymer": "^2.0.0-rc.2"
+    "polymer": "^2.0.0-rc.3"
   }
 }

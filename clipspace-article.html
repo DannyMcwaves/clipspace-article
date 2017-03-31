@@ -9,126 +9,142 @@ Toplevel Element for an article
 
 <dom-module id="clipspace-article">
     <template>
-      <link href="./index_files/styles.css" rel="stylesheet" type="text/css">
-      <link href="./index_files/css" rel="stylesheet" type="text/css">
-      <link href="./index_files/bootstrap.min.css" rel="stylesheet">
-      <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
-      <link href="./index_files/icons.css" rel="stylesheet">
-      <link href="./index_files/theme.css" rel="stylesheet">
+        <link href="./index_files/styles.css" rel="stylesheet" type="text/css">
+        <link href="./index_files/css" rel="stylesheet" type="text/css">
+        <link href="./index_files/bootstrap.min.css" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+        <link href="./index_files/icons.css" rel="stylesheet">
+        <link href="./index_files/theme.css" rel="stylesheet">
 
-      <link href="./index_files/colorbox.css" rel="stylesheet">
-      <link href="./index_files/jquery-ui.css" rel="stylesheet">
+        <link href="./index_files/colorbox.css" rel="stylesheet">
+        <link href="./index_files/jquery-ui.css" rel="stylesheet">
 
-    <style>
-      :host {}
-    </style>
-    <div class="post">
-      <div class="collapsed-post">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="post-header">
-              <div class="row">
-                <div class="col-sm-6 selectoin_menu">
-                </div>
-                <div class="col-md-6">
-                  <div class="post-actions"></div>
-                  <div class="col-md-6">
-                    <div class="post-header-buttons">
-                      <button data-toggle="tooltip" data-placement="top" title="" class="btn btn-icon clipping-check-btn action-margin " data-original-title="Artikel markieren">
-                        <span class="icon icon-check"></span>
-                        <input type="checkbox" class="hide clipping-checkbox" name="clipping[]" value="58bd09df99f95f0914c04a31">
-                      </button>
-
-                      <!--<button class="btn btn-icon action-margin" data-toggle="tooltip" data-placement="top" title="Artikel pinnen"><span class="icon icon-pin"></span></button> -->
-
-                      <div class="btn-group btn-group-tonality action-margin">
-                        <button class="btn btn-icon positiveTonality " data-toggle="tooltip" data-placement="top" data-container="body" title="" data-original-title="Positive Tonalität">
-                          <span class="icon icon-up"></span>
-                        </button>
-                        <button class="btn btn-icon negativeTonality " data-toggle="tooltip" data-placement="top" data-container="body" title="" data-original-title="Negative Tonalität">
-                          <span class="icon icon-down"></span>
-                        </button>
-                      </div>
-                      <button class="btn-expand post-expand-btn" data-toggle="tooltip" data-placement="top" title="" data-original-title="Vollständiger Artikel">
-                        <span class="icon icon-expand"></span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="post-container">
+        <style>
+            :host {
+            }
+        </style>
+        <div class="post">
+            <div class="collapsed-post">
                 <div class="row">
-                  <div class="col-md-8 post-info">
+                    <div class="col-md-12">
+                        <div class="post-header">
+                            <div class="row">
+                                <div class="col-sm-6 selectoin_menu">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="post-actions"></div>
+                                    <div class="col-md-6">
+                                        <div class="post-header-buttons">
+                                            <button data-toggle="tooltip" data-placement="top" title=""
+                                                    class="btn btn-icon clipping-check-btn action-margin "
+                                                    data-original-title="Artikel markieren">
+                                                <span class="icon icon-check"></span>
+                                                <input type="checkbox" class="hide clipping-checkbox" name="clipping[]"
+                                                       value="58bd09df99f95f0914c04a31">
+                                            </button>
+
+                                            <!--<button class="btn btn-icon action-margin" data-toggle="tooltip" data-placement="top" title="Artikel pinnen"><span class="icon icon-pin"></span></button> -->
+
+                                            <div class="btn-group btn-group-tonality action-margin">
+                                                <button class="btn btn-icon positiveTonality " data-toggle="tooltip"
+                                                        data-placement="top" data-container="body" title=""
+                                                        data-original-title="Positive Tonalität">
+                                                    <span class="icon icon-up"></span>
+                                                </button>
+                                                <button class="btn btn-icon negativeTonality " data-toggle="tooltip"
+                                                        data-placement="top" data-container="body" title=""
+                                                        data-original-title="Negative Tonalität">
+                                                    <span class="icon icon-down"></span>
+                                                </button>
+                                            </div>
+                                            <button class="btn-expand post-expand-btn" data-toggle="tooltip"
+                                                    data-placement="top" title=""
+                                                    data-original-title="Vollständiger Artikel">
+                                                <span class="icon icon-expand"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-container">
+                                <div class="row">
+                                    <div class="col-md-8 post-info">
                     <span class="post-date pull-left">
                       [[date]]
                     </span>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-3">
-                    <!-- Preview image -->
-                    <div class="post-preview">
-                      <a href="http://blog.wiwo.de/look-at-it/2017/03/06/instagram-15-milliarden-dollar-umsatz-2016-600-millionen-nutzer-137-weitere-zahlen-fakten/" target="_blank">
-                        <img class="img-responsive" src="[[prevImg]]" alt="">
-                      </a>
-                    </div>
-                    <!-- End Preview image -->
-                  </div>
-                  <div class="col-md-5">
-                    <div class="post-content">
-                      <div class="post-title">
-                        <h1>[[title]]</h1>
-                      </div>
-                      <div class="post-brief">
-                        <p>
-                          [[abstract]]
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 hidden-xs hidden-sm">
-                    <div class="post-source">
-                      <div class="source-provider clearfix">
-                        <div class="provider-logo col-sm-5">
-                          <img src="./index_files/5ae6ce9.png" class="img-responsive">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <!-- Preview image -->
+                                        <div class="post-preview">
+                                            <a href="http://blog.wiwo.de/look-at-it/2017/03/06/instagram-15-milliarden-dollar-umsatz-2016-600-millionen-nutzer-137-weitere-zahlen-fakten/"
+                                               target="_blank">
+                                                <img class="img-responsive" src="[[prevImg]]" alt="">
+                                            </a>
+                                        </div>
+                                        <!-- End Preview image -->
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="post-content">
+                                            <div class="post-title">
+                                                <h1>[[title]]</h1>
+                                            </div>
+                                            <div class="post-brief">
+                                                <p>
+                                                    [[abstract]]
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 hidden-xs hidden-sm">
+                                        <div class="post-source">
+                                            <div class="source-provider clearfix">
+                                                <div class="provider-logo col-sm-5">
+                                                    <img src="./index_files/5ae6ce9.png" class="img-responsive">
+                                                </div>
+                                                <div class="provider col-sm-7">
+                                                    <div class="provider-name">
+                                                        <a href="http://www.wiwo.de/" target="_blank">
+                                                            WirtschaftsWoche Online
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="source-media">
+                                                <a href="http://blog.wiwo.de/look-at-it/2017/03/06/instagram-15-milliarden-dollar-umsatz-2016-600-millionen-nutzer-137-weitere-zahlen-fakten/"
+                                                   target="_blank">
+                                                    <span class="icon icon-link"></span> Originalartikel
+                                                </a>
+                                            </div>
+                                            <div class="post-meta-short">
+                                                <dl class="dl-horizontal">
+                                                    <dt id="rangeLabel">Reichweite</dt>
+                                                    <dd>: 172.562</dd>
+                                                    <dt>Rubrik</dt>
+                                                    <dd>: Internet</dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="provider col-sm-7">
-                          <div class="provider-name">
-                            <a href="http://www.wiwo.de/" target="_blank">
-                              WirtschaftsWoche Online
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="source-media">
-                        <a href="http://blog.wiwo.de/look-at-it/2017/03/06/instagram-15-milliarden-dollar-umsatz-2016-600-millionen-nutzer-137-weitere-zahlen-fakten/" target="_blank">
-                          <span class="icon icon-link"></span> Originalartikel
-                        </a>
-                      </div>
-                      <div class="post-meta-short">
-                        <dl class="dl-horizontal">
-                          <dt>Reichweite </dt>
-                          <dd>: 172.562</dd>
-                          <dt>Rubrik </dt>
-                          <dd>: Internet</dd>
-                        </dl>
-                      </div>
                     </div>
-                  </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </template>
+    </template>
+
+    <script src="../i18next/i18next.min.js"></script>
+    <script src="../i18next-xhr-backend/i18nextXHRBackend.min.js"></script>
 
     <script>
         class ClipspaceArticle extends Polymer.Element {
             static get is() {
                 return 'clipspace-article';
             }
+
             static get properties() {
                 return {
                     title: String,
@@ -136,6 +152,24 @@ Toplevel Element for an article
                     prevImg: String,
                     date: String
                 };
+            }
+
+            ready() {
+                super.ready();
+                console.log('Ready');
+                i18next.init({
+                    lng: 'en',
+                    resources: {
+                        en: {
+                            translation: {
+                                "rangeLabel": "Range"
+                            }
+                        }
+                    }
+                }, (err, t) => {
+                    // initialized and ready to go!
+                    this.$.rangeLabel.textContent = i18next.t('rangeLabel');
+                });
             }
         }
 
