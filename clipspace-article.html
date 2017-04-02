@@ -22,18 +22,24 @@ Toplevel Element for an article
         <style>
             :host {
             }
+            #btns{
+                padding-right: 0px;
+            }
+            .post-container{
+                border-bottom: 1px solid #e2e2e2 !important;
+            }
         </style>
         <div class="post">
             <div class="collapsed-post">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="post-header">
+                        <div id="post-header" class="post-header">
                             <div class="row">
                                 <div class="col-sm-6 selectoin_menu">
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-12">
                                     <div class="post-actions"></div>
-                                    <div class="col-md-6">
+                                    <div id="btns" class="col-md-6 pull-right">
                                         <div class="post-header-buttons">
                                             <button data-toggle="tooltip" data-placement="top" title=""
                                                     class="btn btn-icon clipping-check-btn action-margin "
@@ -66,6 +72,7 @@ Toplevel Element for an article
                                     </div>
                                 </div>
                             </div>
+                        </div>
                             <div class="post-container">
                                 <div class="row">
                                     <div class="col-md-8 post-info">
@@ -133,7 +140,6 @@ Toplevel Element for an article
                     </div>
                 </div>
             </div>
-        </div>
     </template>
 
     <script src="../i18next/i18next.min.js"></script>
